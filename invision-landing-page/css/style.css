@@ -1,19 +1,40 @@
+*{
+  margin: 0;
+}
 body{
-    background: #555;
+  background: #555;
+  margin: 0;
 }
-.main-container{
-    display: flex;
-  background:#ffffff;
+
+.wrapper{
+  width: 100%;
   margin: 0 auto;
-  flex-wrap: wrap;  
 }
-.left-div{
-    background: #ffffff;
-    width: 35%;
-    height: 100vh;
-  }
-  .right-div{
-    background:#ce89ff;
-    width: 65%;
-    height: 100vh;
-  }
+
+.container{
+  display:flex;
+  justify-content: center;
+}
+
+.box{
+  padding: 10px;
+  height: 100vh;
+}
+
+.one{
+  width: 40%;
+  background: #ffff;
+}
+
+.two{
+  width: 60%;
+  background:#f553d2;
+}
+
+.logo{
+  width: 250px;
+  height: 75px;
+  align-items: flex-start;
+  background: #555;
+
+}
