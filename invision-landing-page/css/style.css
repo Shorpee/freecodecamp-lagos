@@ -1,0 +1,19 @@
+body{
+    background: #555;
+}
+.main-container{
+    display: flex;
+  background:#ffffff;
+  margin: 0 auto;
+  flex-wrap: wrap;  
+}
+.left-div{
+    background: #ffffff;
+    width: 35%;
+    height: 100vh;
+  }
+  .right-div{
+    background:#ce89ff;
+    width: 65%;
+    height: 100vh;
+  }
