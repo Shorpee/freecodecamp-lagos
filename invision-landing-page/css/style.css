@@ -13,7 +13,6 @@ body{
 
 .container{
   display:flex;
-  justify-content: center;
 }
 
 .box{
@@ -31,10 +30,7 @@ body{
   background:#f553d2;
 }
 
-.logo{
-  width: 250px;
-  height: 75px;
-  align-items: flex-start;
+.img-container{
+  display: flex;
   background: #555;
-
 }
