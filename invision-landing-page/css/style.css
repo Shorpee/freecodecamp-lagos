@@ -16,13 +16,17 @@ body{
 }
 
 .box{
-  padding: 10px;
+  padding: 25px;
   height: 100vh;
 }
 
 .one{
+  padding-left: 50px;
+  padding-right: 50px;
   width: 40%;
-  background: #ffff;
+  background: #FFFFFF;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .two{
@@ -32,5 +36,8 @@ body{
 
 .img-container{
   display: flex;
-  background: #555;
+  flex-wrap: wrap;
+  width:220px;
+  height: 77px;
+  background: #FFFFFF;
 }
