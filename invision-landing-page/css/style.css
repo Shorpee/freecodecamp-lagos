@@ -33,8 +33,19 @@ body{
 
 .two{
   width: 65%;
-  background:#6247B9;
+  background: url("../img/Customer1_InVision.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
+
+/**.gradient-background{
+  background: linear-gradient(to right,rgba(98, 71, 185, 0.7),rgba(168, 115, 208, 0.7),url("../img/Customer1_InVision.jpg"));
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}*/
 
 .img-container{
   justify-content: flex-start;
@@ -58,12 +69,27 @@ p{
   color: #6247B9;
 }
 
+#grey-text{
+  color: #565656;
+}
+
+#grey-light{
+  color: #BCBCBC;
+}
+
 #gradient-button{
   border: none;
+  border-radius: 4%;
   margin-top: 35px;
   margin-bottom: 15px;
   width: 150px;
   height: 50px;
-  font-size: 1.05em;
-  /**color: #FFFFFF;*/
+  font-size: 1.07em;
+  background-image: linear-gradient(to right, #6151BD , #A873D0);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn :hover{
+  transform: translateY(-7);
 }
