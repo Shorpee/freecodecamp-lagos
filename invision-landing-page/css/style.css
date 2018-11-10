@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,500');
-
-
-*{
-  margin:0;
-  font-family: 'Roboto', sans-serif;
-}
+  
 body{
-  /**background: #555;*/
   margin: 0;
-  frame-border: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper{
+  height: auto;
   width: 100%;
   margin: 0 auto;
 }
 
 .container{
   display:flex;
+  flex-direction: row;
 }
 
 .box{
@@ -25,23 +21,20 @@ body{
   height: 100vh;
 }
 
+
+/**
+    Styling for left Div flexbox
+*/
+
 .one{
+  display: flex;
   padding-left: 50px;
   padding-right: 50px;
   width: 35%;
   background: #FFFFFF;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
 }
-
-.two{
-  width: 65%;
-  /*background: url(../img/Customer1_InVision.jpg) no-repeat center center;*/
-  /**background: rgb(97,81,189);*/
-background: linear-gradient(90deg, rgba(97,81,189,0.7987570028011204) 0%, rgba(110,110,191,0.7371323529411764) 35%, rgba(168,115,208,0.7959558823529411) 100%), url(../img/Customer1_InVision.jpg) no-repeat center center;
-background-size: cover;
-}
-
 
 .logo-container{
   justify-content: flex-start;
@@ -52,9 +45,8 @@ background-size: cover;
 }
 
 .content-container{
-  margin-top: 200px;
-  /**background: #555;*/
   flex-wrap: wrap;
+  margin-bottom: 30%;
 }
 
 p{
@@ -69,10 +61,12 @@ h1{
 
 #blue-text{
   color: #6247B9;
+  margin-bottom: 0;
 }
 
 #grey-text{
   color: #565656;
+  margin-top: 0;
 }
 
 #grey-light{
@@ -92,30 +86,52 @@ h1{
   cursor: pointer;
 }
 
+
+/**
+  styling for the right Div Box
+*/
+
+.two{
+  width: 65%;
+}
+
+.gradient-background{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(97,81,189,0.7987570028011204) 0%, rgba(110,110,191,0.7371323529411764) 35%, rgba(168,115,208,0.7959558823529411) 100%), url(../img/Customer1_InVision.jpg) no-repeat center center;
+background-size: cover;
+}
+
+/**
+    Styling for navigation
+*/
+
 nav{
   font-family: "Roboto", sans-serif;
   font-size: 1.01em;
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 20px;
 }
 
 nav ul{
   display: flex;
   flex: 1 1 0;
+  height: auto;
   justify-content: space-around; 
   list-style-type: none;
-  padding: 0;
+  text-align: center;
 }
 
 nav a{
   /**background: #565656;*/
   text-decoration: none;
-  text-align: center;
   color: #FFFFFF;
 }
 
-#nav-button{
+nav button{
+  border: none;
+  color: #FFFFFF;
+  height: 40px;
+}
+
+/**#nav-button{
   border: none;
   font-size: 1.01em;
   height: 40px;
@@ -124,4 +140,4 @@ nav a{
   color: #FFFFFF;
   background: rgba(30, 52, 142, 0.5);
   cursor: pointer;
-}
+}*/
